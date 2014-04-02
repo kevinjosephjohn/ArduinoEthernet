@@ -6,14 +6,14 @@ A simple sketch for turning on led's,reading temperature from the analog sensor 
 
 ===============
 
-IRremote Library :
+#H4 IRremote Library :
 
 http://www.righto.com/2009/08/multi-protocol-infrared-remote-library.html
 
 Connect the Infrared LED to the pin 3.
 
 
-Wiring : 
+#H4 Wiring : 
 
 4,5,6 - Digital Out/ LED
 
@@ -21,7 +21,7 @@ A2 - Temperature Sensor LM35
 
 A3 - LDR 
 
-Usage : 
+#H4 Usage : 
 
 Change the Ethernet Settings according to your default gateway
 
@@ -43,15 +43,22 @@ http://ArduinoIpaddress/?5
 LED 3 OFF : 
 http://ArduinoIpaddress/?6
 
+You can add new cases in the switch statement for controlling more pins or adding new sensors.
+When an LED is turned On or Off the status is update in the value. 
+This can be used to check the state of the led to make real time applications that are in sync with each other.
 
-LED STATUS : 
+
+
+#H4 LED STATUS : 
 
 http://ArduinoIpaddress/?7
 http://ArduinoIpaddress/?8
 http://ArduinoIpaddress/?9
 
+The status of the led's can be obained from here. If the LED is on you get 1 if it is off you get 0.
 
-Sensor Details :
+#H4 Sensor Details :
+
 
 Temperature Sensor
 http://ArduinoIpaddress/?T
@@ -59,6 +66,7 @@ http://ArduinoIpaddress/?T
 LDR Sensor
 http://ArduinoIpaddress/?L
 
+Add the code needed to obtain the sensor details inside the switch case,it gets executed when the case is passed and provides the detail on the web page. 
 
 
 
